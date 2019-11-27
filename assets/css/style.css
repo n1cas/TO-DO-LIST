@@ -1,0 +1,124 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background:black;
+	color: rgb(4, 168, 40);
+}
+
+
+h1 {
+  font-size: 72px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+input{
+	background: transparent;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 15px;
+	color: rgb(4, 168, 40);
+    border-bottom: 1px solid rgb(4, 168, 40);
+    border-top: 1px solid rgb(4, 168, 40);
+
+}
+
+
+input::-webkit-input-placeholder {
+	color:rgb(4, 168, 40);
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 820px;
+}
+
+.main-header {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.main-header input {
+	padding-right: 100px;
+}
+/* кнопки */
+.buttons {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -15px;
+}
+
+.buttons a {
+	padding-right: 15px;
+	margin-right: 11px;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.buttons a:last-child {
+	padding-right: 0;
+	margin-right: 0;
+	border-right: 0;
+}
+
+.fa {
+	font-size: 30px;
+	color: red;
+	transition: all 0.2s;
+}
+
+.fa:hover {
+	color:red;
+	transform: scale(1.2);
+}
+
+/* стилі ліста */
+.todo {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.todo li {
+	position: relative;
+	background: rgb(4, 168, 40);
+	padding: 5px;
+	border-radius: 10px;
+	text-align: left;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #000;
+	padding: 20px 120px 20px 20px;
+	box-shadow: 0 1px 9px red;
+}
+
+.todo .fa {
+	color:red;
+}
+
+.todo li.fill {
+	text-decoration: line-through;
+}
+
+.todo li.fill i.fa-check {
+	color: #000;
+	transform: scale(1.2);
+}
+
+.todo .fa:hover {
+	color: #000;
+}
+
+.todo .buttons {
+	right: 20px;
+}
+
+
